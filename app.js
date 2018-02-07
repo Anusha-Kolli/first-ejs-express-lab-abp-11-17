@@ -6,7 +6,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, resp){
-  resp.render('index')
+   const welcomeText = "Welcome to EJS"
+  resp.render('index',{welcomeText: welcomeText})
 })
 
 // Build Your Route Here
