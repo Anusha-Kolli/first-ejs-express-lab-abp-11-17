@@ -1,5 +1,13 @@
 var express = require('express')
 var app = express()
+const path = require('path');
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.get('/', function(req, resp){
+  resp.render('index')
+})
 
 // Build Your Route Here
 
