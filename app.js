@@ -6,7 +6,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, resp){
-   const welcomeText = "Welcome to EJS"
+   const welcomeText = "Hello, World from Express and EJS!"
   resp.render('index',{welcomeText: welcomeText})
 })
 
